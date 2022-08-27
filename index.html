@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<title>ArtusShop</title>
+		<meta charset="UTF-8">
+		<link href="style.css" rel="stylesheet">
+		<script src="main.js"></script>
+	</head>
+	<body>
+
+
+		<nav id="navbar">
+
+			<div class="nav-logo">
+				<img src="assets/logo.png" alt="[LOGO]"><h1>ArtusShop</h1>
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Produkte</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<button>Jetzt Kaufen</button>
+		</nav>
+
+		<div class="landing-page">
+			<div class="landing-page-header">
+				<h1>Jetzt neu!</h1>
+				<h2>Nur bis zum <span class="orangeText">1.1.2050</span></h2>
+			</div>
+			<div class="landing-page-products">
+				<img class = "landingProduct-1" src="assets/products/greenBottle.png" id="landingproduct-show" alt="[PRODUCT]">
+				<img class = "landingProduct-2" src="assets/products/pinkBottle.png" alt="[PRODUCT]">
+				<img class = "landingProduct-3" src="assets/products/whiteBottle.png" alt="[PRODUCT]">
+				<img class = "landingProduct-4" src="assets/products/grayBottle.png" alt="[PRODUCT]">
+				<button id="landingProductSliderPre" onclick="landingProductSlider(-1)"><</button>
+				<button id="landingProductSliderNext" onclick="landingProductSlider(1)">></button>
+			</div>
+			
+		</div>
+
+	
+	</body>
+</html>

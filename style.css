@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'GenomUltra';
+    src: url("assets/fonts/Geom\ Ultra.ttf");
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 200rem;
+}
+
+nav {
+    position: fixed;
+    top: 1rem;
+    height: 5rem;
+    left: 10%;
+    right: 10%;
+
+    display: flex;
+    justify-content: left;
+    z-index: 9999999999999999;
+}
+
+.nav-background div h1{
+    color: #42454d;
+    
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+    width: 12rem;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-logo h1 {
+    margin-top: 1.5rem;
+    transform: translateY(-40%);
+    height: 2rem;
+    font-family: GenomUltra;
+    margin-left: 10px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: 35%;
+    margin-right: 25%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-75%);
+}
+nav ul li {
+    font-size: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #42454d;
+    font-family: "Montserrat";
+    position: relative;
+}
+nav ul li a::after {
+    position: absolute;
+    content: "";
+    background-color: #42454d;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms;
+}
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+nav button {
+    position: relative;
+    top: 50%;
+    transform: translateY(-65%);
+
+    width: 25rem;
+    height: 2.5rem;
+    border: #fe8b00 solid;
+    border-radius: 10rem;
+    border-width: 3.5px;
+    background-color: transparent;
+    color: #fe8b00;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+}
+nav button:hover {
+    background-color: #fe8b00;
+    color: white;
+    cursor: pointer;
+}
+
+
+.landing-page {
+    background-color: #202125;
+    height: 100vh;
+}
+
+.landing-page-header {
+    margin-top: 50vh;
+    margin-left: 5vw;
+    position: absolute;
+    width: 50rem;    
+}
+.landing-page h1 {
+    color: white;
+    font-family: "arial black";
+    font-size: 5rem;
+    font-weight: bolder;
+    position: absolute;
+}
+.landing-page h2 {
+    color: white;
+    font-family: "arial black";
+    font-size: 3.5rem;
+    font-weight: bolder;
+    position: absolute;
+
+    margin-top: 8.5rem;
+    z-index: 10;
+}
+.orangeText {
+    color: #fe8b00;
+    font-family: GenomUltra;
+}
+
+
+.landing-page-products {
+    margin-left: 65vw;
+    margin-top: 8em;
+    position: absolute;
+}
+#landingproduct-show {
+    opacity: 1;
+    padding-left: 0;
+}
+.landing-page-products img {
+    position: absolute;
+    width: 10vw;
+    transform: rotate(15deg);
+    
+    padding-left: 5rem;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+.landing-page-products button {
+    position: absolute;
+    margin-top: 14rem;
+    background: none;
+    color: #42454d;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all 250ms ease-in-out;
+}
+.landing-page-products button:hover {
+    background-color: #42454d;
+    color: #202125;
+    border-radius: 10rem;
+}
+
+
+#landingProductSliderPre {
+    margin-left: -8rem;
+}
+#landingProductSliderNext {
+    margin-left: 15rem;
+}
+
