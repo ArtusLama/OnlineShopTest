@@ -167,9 +167,9 @@ nav button:hover {
     transition: all 500ms ease-in-out;
 }
 
-.landing-page-products button {
+.landing-page-products button:not(.landingProductBuyNow) {
     position: absolute;
-    margin-top: 14rem;
+    margin-top: 35vh;
     background: none;
     color: #42454d;
     font-size: 28px;
@@ -179,17 +179,28 @@ nav button:hover {
     height: 2.5rem;
     transition: all 250ms ease-in-out;
 }
-.landing-page-products button:hover {
+.landing-page-products button:not(.landingProductBuyNow):hover {
     background-color: #42454d;
     color: #202125;
     border-radius: 10rem;
 }
-
-
 #landingProductSliderPre {
     margin-left: -8rem;
 }
 #landingProductSliderNext {
     margin-left: 15rem;
+}
+
+.landingProductBuyNow {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 17px;
+    background: none;
+    border: solid 4px #fe8b00;
+    color: #fe8b00;
+    border-radius: 10rem;
+    margin-top: 70vh;
+    cursor: pointer;
+    margin-left: -2rem;
 }
 
