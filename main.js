@@ -5,15 +5,13 @@ function onScrollEvent() {
 
     var navbar = document.getElementById('navbar');
     var y = window.scrollY;
-    if (y > window.innerHeight - 50 && !isScrollDown) {
+    if (y > window.innerHeight + 125 && !isScrollDown) {
         isScrollDown = true
         navbar.classList.add("nav-background");
-        console.log("Scroll");
     }
-    if (y < window.innerHeight - 50){
+    if (y < window.innerHeight + 125){
         isScrollDown = false;
         navbar.classList.remove("nav-background");
-        console.log("Top");
     }
 
 }
@@ -21,11 +19,17 @@ function onScrollEvent() {
 
 var landingProductIndex = 1;
 function landingProductSlider(dir) {
+    var old = document.getElementsByClassName("landingProduct-" + landingProductIndex).item(0);
+    old.style.rotation = "15deg";
+    old.style.animation = "productsAnimationHide 1s";
+
     landingProductIndex += dir;
     if (landingProductIndex > 4) landingProductIndex = 1;
     if (landingProductIndex < 1) landingProductIndex = 4;
     document.getElementById("landingproduct-show").removeAttribute("id");
     var newElement = document.getElementsByClassName("landingProduct-" + landingProductIndex).item(0);
+    newElement.style.rotation = "15deg";
+    newElement.style.animation = "productsAnimationShow 1s";
     newElement.setAttribute("id", "landingproduct-show");
 }
 

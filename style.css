@@ -155,17 +155,40 @@ nav button:hover {
 }
 #landingproduct-show {
     opacity: 1;
-    padding-left: 0;
 }
 .landing-page-products img {
     position: absolute;
     width: 10vw;
     transform: rotate(15deg);
     
-    padding-left: 5rem;
     opacity: 0;
-    transition: all 500ms ease-in-out;
 }
+
+@keyframes productsAnimationShow {
+
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+        transform: rotate(15deg);
+        opacity: 1;
+    }
+}
+@keyframes productsAnimationHide {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        transform: rotate(15deg);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+        transform: rotate(10deg);
+    }
+}
+
 
 .landing-page-products button:not(.landingProductBuyNow) {
     position: absolute;
@@ -195,12 +218,42 @@ nav button:hover {
     width: 7rem;
     height: 2.5rem;
     font-size: 17px;
-    background: none;
+    background-color: transparent;
     border: solid 4px #fe8b00;
     color: #fe8b00;
     border-radius: 10rem;
     margin-top: 70vh;
     cursor: pointer;
     margin-left: -2rem;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    transition: color 250ms ease-in-out;
+    transition-property: background-color;
+    transition-duration: 0;
+    transition-delay: 250ms;
+}
+
+.landingProductBuyNow::before {
+    content: "";
+    position: absolute;
+    background: #fe8b00;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    transition: right 250ms ease-in-out;
+}
+.landingProductBuyNow:hover {
+    color: white;
+    background-color: #fe8b00;
+}
+.landingProductBuyNow:hover::before {
+    right: 0;
+}
+
+.landing-page-wave path{
+    fill: #202125;
 }
 
