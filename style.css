@@ -45,6 +45,7 @@ nav {
     transform: translateY(-50%);
 }
 
+
 .nav-logo h1 {
     margin-top: 1.5rem;
     transform: translateY(-40%);
@@ -97,7 +98,7 @@ nav button {
     top: 50%;
     transform: translateY(-65%);
 
-    width: 25rem;
+    width: 35rem;
     height: 2.5rem;
     border: #fe8b00 solid;
     border-radius: 10rem;
@@ -106,11 +107,47 @@ nav button {
     color: #fe8b00;
     font-weight: bold;
     transition: all 250ms ease-in-out;
+    text-align: right;
 }
 nav button:hover {
     background-color: #fe8b00;
     color: white;
     cursor: pointer;
+}
+
+nav button p {
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    margin: 0;
+    transform: translateY(35%);
+    transition: all 250ms ease-in-out;
+}
+nav button:hover p {
+    position: absolute;
+    right: 1rem;
+}
+
+nav button svg {
+    position: absolute;
+    left: 0rem;
+    top: 0;
+    transform: translateY(25%);
+    width: 1.5rem;
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+
+nav button:hover svg{
+    opacity: 1;
+    left: 0.75rem;
+}
+
+nav button svg circle, nav button svg path {
+    transition: all 250ms ease-in-out;
+}
+nav button:hover svg circle, nav button:hover svg path {
+    fill: white;
 }
 
 
