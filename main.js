@@ -34,6 +34,21 @@ function landingProductSlider(dir) {
 }
 
 
+function addToCart(name) {
+    var items = JSON.parse(localStorage.getItem("shoppingCart"));
+    if (items != null){
+        items.add(name);
+    }
+    localStorage.setItem("shoppingCart", JSON.stringify(items));
+}
+
+function addLandingProductToCart(){
+    addToCart()
+}
+
+
+
+
 
 window.setInterval(function() {
     landingProductSlider(1);
