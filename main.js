@@ -35,15 +35,20 @@ function landingProductSlider(dir) {
 
 
 function addToCart(name) {
-    var items = JSON.parse(localStorage.getItem("shoppingCart"));
-    if (items != null){
-        items.add(name);
-    }
-    localStorage.setItem("shoppingCart", JSON.stringify(items));
+    var items = [name];
+    items = items.concat(getCartItems());
+    console.log(items);
+    localStorage.setItem("cartItems", JSON.stringify(items))
+}
+function getCartItems() {
+    var items = JSON.parse(localStorage.getItem("cartItems"));
+    if (items == null) return [];
+    return items;
 }
 
 function addLandingProductToCart(){
-    addToCart()
+    addToCart("bottle-" + landingProductIndex);
+    console.log(getCartItems());
 }
 
 
