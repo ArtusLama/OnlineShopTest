@@ -37,7 +37,6 @@ function landingProductSlider(dir) {
 function addToCart(name) {
     var items = [name];
     items = items.concat(getCartItems());
-    console.log(items);
     localStorage.setItem("cartItems", JSON.stringify(items))
 }
 function getCartItems() {
@@ -48,7 +47,7 @@ function getCartItems() {
 
 function addLandingProductToCart(){
     addToCart("bottle-" + landingProductIndex);
-    console.log(getCartItems());
+    location.href='buy.html'
 }
 
 

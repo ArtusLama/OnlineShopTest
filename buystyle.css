@@ -1,0 +1,60 @@
+
+
+
+@font-face {
+    font-family: 'GenomUltra';
+    src: url("assets/fonts/Geom\ Ultra.ttf");
+}
+
+
+
+body {
+    height: 100vh;
+}
+
+.nav-logo h1 {
+    color: #fe8b00;
+}
+
+.products {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    left: 15rem;
+    right: 15rem;
+    top: 8rem;
+    bottom: 5rem;
+    border-radius: 10px;
+    background-image: url("assets/images/products_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-type: y proximity;
+}
+.products h1 {
+    font-size: 3rem;
+    position: relative;
+    left: 18rem;
+    color: #fe8b00;
+    scroll-snap-align: start;
+    scroll-margin-top: 2rem;
+    font-family: GenomUltra;
+}
+
+.products li {
+    scroll-snap-align: start;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    scroll-margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    height: 6rem;
+    width: 95%;
+}
+.products li img {
+    position: absolute;
+    width: 1.75rem;
+    height: 5rem;
+}
