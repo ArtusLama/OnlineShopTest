@@ -25,11 +25,12 @@ body {
     left: 15rem;
     right: 15rem;
     top: 8rem;
-    bottom: 5rem;
+    bottom: 8rem;
     border-radius: 10px;
     background-image: url("assets/images/products_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 -4rem;
     scroll-snap-type: y proximity;
 }
 .products h1 {
@@ -52,9 +53,38 @@ body {
     margin-bottom: 1.5rem;
     height: 6rem;
     width: 95%;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
 }
 .products li img {
-    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
     width: 1.75rem;
     height: 5rem;
+}
+.products li p {
+    color: blueviolet;
+}
+
+
+.zurKasseButton {
+    position: absolute;
+    text-align: center;
+    width: 8rem;
+    height: 2.5rem;
+
+    margin-top: 10rem;
+
+    border: #fe8b00 solid;
+    border-radius: 10rem;
+    border-width: 3.5px;
+    background-color: transparent;
+    color: #fe8b00;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+}
+.zurKasseButton:hover {
+    background-color: #fe8b00;
+    color: white;
+    cursor: pointer;
 }
