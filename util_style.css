@@ -1,0 +1,42 @@
+
+
+
+.alertBanner {
+    margin-bottom: -2rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.8rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    background-color: rgb(220, 220, 220);
+    animation: bannerFadeIn 1s ease-in;
+    margin-bottom: 0;
+}
+.alertBanner h1 {
+    margin-top: 5px;
+    font-size: 16px;
+    color: white;
+}
+.alertBanner a{
+    color: white;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+.alertBanner a:hover{ 
+    color: rgb(200, 200, 200);
+}    
+
+@keyframes bannerFadeIn {
+    0% {margin-bottom: -2rem;opacity: 0.5;}
+    100% {margin-bottom: 0;opacity: 1;}
+}
+@keyframes bannerFadeOut {
+    0% {margin-bottom: 0;opacity: 1;}
+    100% {margin-bottom: -2rem;opacity: 0.5;}
+}
+
