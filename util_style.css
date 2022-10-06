@@ -14,7 +14,7 @@
     border-top-right-radius: 1rem;
 
     background-color: rgb(220, 220, 220);
-    animation: bannerFadeIn 1s ease-in;
+    animation: bannerFadeIn 250ms ease-in;
     margin-bottom: 0;
 }
 .alertBanner h1 {

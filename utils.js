@@ -10,7 +10,7 @@ function alertBanner(text, color) {
 
     setTimeout(function() {
 
-        Array.from(document.getElementsByClassName("alertBanner")).forEach(function(e) {e.style.animation = "bannerFadeOut 2s ease-out";});
+        Array.from(document.getElementsByClassName("alertBanner")).forEach(function(e) {e.style.animation = "bannerFadeOut 1s ease-out";});
         setTimeout(function() {
             Array.from(document.getElementsByClassName("alertBanner")).forEach(function(e) {e.remove()});
         }, 2000);
