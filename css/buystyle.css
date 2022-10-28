@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'GenomUltra';
-    src: url("assets/fonts/Geom\ Ultra.ttf");
+    src: url("../assets/fonts/Geom Ultra.ttf");
 }
 
 
@@ -27,7 +27,7 @@ body {
     top: 8rem;
     bottom: 8rem;
     border-radius: 10px;
-    background-image: url("assets/images/products_bg.svg");
+    background-image: url("../assets/images/products_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -4rem;

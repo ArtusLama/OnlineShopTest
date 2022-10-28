@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="de">
 	<head>
+		<!-- TITEL oben im Browser -->
 		<title>ArtusShop</title>
+		<!-- LOGO oben im Browser -->
 		<link rel="icon" type="image/png" href="assets/logo.png"/>
 		<meta charset="UTF-8">
-		<link href="style.css" rel="stylesheet">
-		<link href="util_style.css" rel="stylesheet">
+		<!-- ADD CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/util_style.css" rel="stylesheet">
+		<!-- ADD JAVASCRIPT -->
 		<script src="main.js"></script>
 		<script src="utils.js"></script>
 	</head>
 	<body>
 
-
+		<!-- Navigationsleiste -->
 		<nav id="navbar">
-
+			
+			<!-- Das Logo links -->
 			<div class="nav-logo">
 				<img src="assets/logo.png" alt="[LOGO]"><h1>ArtusShop</h1>
 			</div>
+			<!-- Unterwebseiten verinken -->
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="#">Produkte</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
+			<!-- Warenkorb Button hinzufügen -->
 			<button onclick="location.href='buy.html'">
+				<!-- Einkaufswagen svg hinzufügen. Ich nehme da den SVG CODE, damit ich die Farbe in Css noch ändern kann -->
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 					<circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/><path d="M22.984,6.018A3.675,3.675,0,0,0,20.364,5H5.654L5.391,2.938A3.328,3.328,0,0,0,2.087,0H1.5A1.5,1.5,0,0,0,0,1.5H0A1.5,1.5,0,0,0,1.5,3h.587a.331.331,0,0,1,.326.3l1.5,11.759A3.327,3.327,0,0,0,7.217,18H17.339a5.5,5.5,0,0,0,5.3-4.042l1.246-4.531A3.489,3.489,0,0,0,22.984,6.018ZM19.75,13.163A2.508,2.508,0,0,1,17.339,15H7.217a.329.329,0,0,1-.325-.3L6.037,8H20.514A.5.5,0,0,1,21,8.632Z"/>
 				</svg>
 				<p>Warenkorb</p>
 			</button>
 		</nav>
-
+		
+		<!-- LandingPage Content -->
 		<div class="landing-page">
+			<!-- Catchy Text -->
 			<div class="landing-page-header">
 				<h1>Jetzt neu!</h1>
 				<h2>Nur bis zum <span class="orangeText">1.1.2050</span></h2>
 			</div>
+			<!-- Alle Produkte. In css und js wird dann gemacht, dass immer nur eins angezeigt wird -->
 			<div class="landing-page-products">
 				<img class = "landingProduct-1" src="assets/products/bottle-1.png" id="landingproduct-show" alt="[PRODUCT]">
 				<img class = "landingProduct-2" src="assets/products/bottle-2.png" alt="[PRODUCT]">
 				<img class = "landingProduct-3" src="assets/products/bottle-3.png" alt="[PRODUCT]">
 				<img class = "landingProduct-4" src="assets/products/bottle-4.png" alt="[PRODUCT]">
+				<!-- Buttons, um eins weiter/zurück zu gehen -->
 				<button id="landingProductSliderPre" onclick="landingProductSlider(-1)"><</button>
 				<button id="landingProductSliderNext" onclick="landingProductSlider(1)">></button>
+				<!-- Produkt zum Warenkorb hinzufügen -->
 				<button class="landingProductBuyNow" onclick="addLandingProductToCart()">buy now</button>
 			</div>
 			
 		</div>
+		<!-- Die Wellen SVG hinzufügen -->
 		<svg class="landing-page-wave" viewBox="0 0 1440 320">
 			<path fill-opacity="1" d="M0,192L48,208C96,224,192,256,288,234.7C384,213,480,139,576,128C672,117,768,171,864,181.3C960,192,1056,160,1152,144C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
 		</svg>
