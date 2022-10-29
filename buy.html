@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
 	<head>
+		<!-- TITEL oben im Browser -->
 		<title>ArtusShop</title>
+		<!-- ICON oben im Browser -->
 		<link rel="icon" type="image/png" href="assets/logo.png"/>
 		<meta charset="UTF-8">
+		<!-- CSS einbinden -->
 		<link href="css/style.css" rel="stylesheet">
         <link href="css/util_style.css" rel="stylesheet">
         <link href="css/buystyle.css" rel="stylesheet">
-        
+        <!-- JAVASCRIPT einbinden -->
         <script src="assets/products/products.js"></script>
-		<script src="buypage.js"></script>
-        <script src="utils.js"></script>
+		<script src="js/buypage.js"></script>
+        <script src="js/utils.js"></script>
 	</head>
 	<body>
 
 
+		<!-- Navigationsleiste oben -->
 		<nav id="navbar">
-
+			<!-- Das Logo + Schriftzug -->
 			<div class="nav-logo">
 				<img src="assets/logo.png" alt="[LOGO]"><h1>ArtusShop</h1>
 			</div>
 			<ul>
+				<!-- Verlinkung von den Webseiten -->
 				<li><a href="index.html">Home</a></li>
 				<li><a href="#">Produkte</a></li>
 				<li><a href="#">Contact</a></li>
@@ -28,6 +33,7 @@
 		
 		</nav>
 
+		<!-- Container, in den die Produkte al <li> in js hinzugefügt werden -->
         <div class="products">
             <ul id="productList">
                 <h1>Deine Artikel</h1>
@@ -35,6 +41,8 @@
             </ul>
         </div>
 
+		<!-- Bezahlen Button. Das onclick ist da, weil noch nichts passieren soll, außer ein Banner, das
+		unten auftauchen soll <- ist in js alles gemacht in utils -->
 		<button class="zurKasseButton" onclick='alertBanner("zur Zeit nicht verfügbar", "#FD5D5D")'>Zur Kasse</button>
         
         

@@ -1,5 +1,5 @@
 
-
+// Hier werden alle Eigenschaften, wie Name und Preis für das jeweilige Produkt festgelegt
 var products = 
 {
 
