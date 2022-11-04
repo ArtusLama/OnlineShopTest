@@ -17,6 +17,8 @@ body {
     height: 200rem;
 }
 
+
+
 nav {
     position: fixed;
     top: 1rem;
@@ -69,12 +71,20 @@ nav ul {
 nav ul li {
     font-size: 20px;
 }
+
+.onThisWebPage {
+	
+	color: red !important;	
+}
+
+
 nav ul li a {
     text-decoration: none;
     color: #42454d;
     font-family: "Montserrat";
     position: relative;
 }
+
 nav ul li a::after {
     position: absolute;
     content: "";
@@ -293,4 +303,6 @@ nav button:hover svg circle, nav button:hover svg path {
 .landing-page-wave path{
     fill: #202125;
 }
+
+	
 

@@ -70,7 +70,7 @@ body {
 
 .products li div {
     position: absolute;
-	top: 0;
+	
     margin-left: 5rem;
 }
 .product_name {
