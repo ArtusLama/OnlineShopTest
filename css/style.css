@@ -45,6 +45,7 @@ nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+	cursor: pointer;
 }
 
 
@@ -70,11 +71,6 @@ nav ul {
 }
 nav ul li {
     font-size: 20px;
-}
-
-.onThisWebPage {
-	
-	color: red !important;	
 }
 
 

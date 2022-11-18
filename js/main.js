@@ -1,5 +1,9 @@
 
 
+
+
+
+
 // Für den Logo Schriftzug, damit er Dunkel wird, wenn er über der Weißen Section ist und
 // Weiß, wenn er über der Dunklen Section ist
 var isScrollDown = false;
