@@ -18,6 +18,11 @@ var products =
     "bottle-4": {
         name: "Gray Bottle",
         price: 19.99
+    },
+
+    "light_blue_bag": {
+        name: "Light blue bag",
+        price: 30
     }
 
 }

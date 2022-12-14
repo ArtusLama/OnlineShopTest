@@ -11,10 +11,11 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/util_style.css" rel="stylesheet">
 		<!-- ADD JAVASCRIPT -->
-		<script src="js/main.js"></script>
 		<script src="js/utils.js"></script>
+		<script src="js/product-site.js"></script>
+		<script src="assets/products/products.js"></script>
 	</head>
-	<body>
+	<body onload="loadProducts()">
 
 		<!-- Navigationsleiste -->
 		<nav id="navbar">
@@ -49,7 +50,7 @@
 			<div class="products_container">
 				<input type="text" id="searchInput" onkeyup="search()" placeholder="Search for products..">
 				<div class="products">
-					<ul id="products">
+					<ul id="product_list">
 						
 					</ul>
 				</div>

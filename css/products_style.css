@@ -1,33 +1,183 @@
 
 
-
-* {
-    border: red 1px dashed;
+@font-face {
+    font-family: 'GenomUltra';
+    src: url("../assets/fonts/Geom Ultra.ttf");
 }
 
 
+
+
 .nav-logo h1 {
+    /*      Damit das Logo nicht weiß auf weiß ist       */
     color: #fe8b00 !important;
 }
 
 
 .content {
 
+    /*       Styling um eine Box in der Mitte zu haben mit Abstand vom Rand      */
     position: absolute;
     left: 10%;
     right: 10%;
-    top: 10rem;
+    top: 6rem;
     bottom: 5%;
 
+    /*      Flex-Styling Methode + welche richtung der Elemente       */
     display: flex;
     flex-direction: row;
 }
 
-.categories {
-    width: 20rem;
+.content div {
+
+    /*border: 2px solid #e9eef2;*/
+
 }
+
+
+.categories {
+    width: 15rem;
+}
+
+
 .products_container {
+    padding: 20px;
+
+    /*     Um den Rest des Flex-Containers auszufüllen        */
     flex-grow: 1;
+
+    /*      Flex Stylingart um die Child-Elemente untereinander zu machen       */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchInput {
+    
+    width: 50%;
+    height: 2.5rem;
+
+    border-radius: 4px;
+
+    border: 2px #e9eef2 solid;
+
+    background-color: #f0f5f8;
+
+    
+
+
+}
+
+
+
+
+.products {
+    /*      Um den Rest aufzufüllen (oben Search-Bar, rest soll mit Produkten)       */
+    flex-grow: 1;
+
+
+    margin-top: 1rem;
+    width: 100%;
+
+    /*   Damit die Produkte nicht aus dem Container raus gehen   */
+    overflow-y: scroll;
+
+}
+
+#product_list {
+
+    margin: 0;
+    padding: 25px;
+
+
+
+    /*  Um die Listenpunkte zu entfernen */
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 25px;
+    
+
+}
+
+#product_list li {
+    
+
+    width: 30%;
+    height: 18rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 2px solid #e9eef2;
+    border-radius: 4px;
+
+    transition: all 200ms ease-in-out;
+}
+
+
+.product_stuff {
+    position: relative;
+    margin-top: 1rem;
+    width: 80%;
+
+    display: inline-block;
+}
+
+#product_list li img {
+    margin-top: 1rem;
+    max-height: 12rem;
+    max-width: 80%;
+    object-fit: scale-down;
+}
+#product_list li h1 {
+    width: 80%;
+    text-align: left;
+    font-size: 16px;
+    color: #373737;
+    margin-bottom: 0;
+
+}
+#product_list li h2 {
+    margin-top: -6px;
+    width: 80%;
+    text-align: left;
+    font-size: 12px;
+    color: #686868;
+
+}
+#product_list li button {
+    position: absolute;
+    right: 0;
+    top: 20%;
+
+    font-family: GenomUltra;
+    width: 6rem;
+    height: 2.25rem;
+
+    
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+
+
+    border: none;
+    border-radius: 100px;
+}
+
+#product_list li button:hover {
+    background-color: #ffa93f;
+}
+
+
+#product_list li:hover {
+    
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 5px 5px 15px 1px #e9eef2;
+    background-color: white;
+    border: 0px solid #e9eef2;
 }
 
 
