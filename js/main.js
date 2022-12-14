@@ -7,7 +7,7 @@
 // Für den Logo Schriftzug, damit er Dunkel wird, wenn er über der Weißen Section ist und
 // Weiß, wenn er über der Dunklen Section ist
 var isScrollDown = false;
-function onScrollEvent() {
+function onScrollEvent() { //FIXME: passiert noch auf allen Webseiten
 
     var navbar = document.getElementById('navbar');
     var y = window.scrollY;
@@ -66,8 +66,7 @@ function getCartItems() {
 // Produkt von der LandingPage zum Warenkorb hinzufügen
 function addLandingProductToCart(){
     addToCart("bottle-" + landingProductIndex);
-    // Zur Buy Unterwebseite gehenw
-    //FIXME:
+    // Zur Buy Unterwebseite gehen
     location.href='buy.html'
 }
 

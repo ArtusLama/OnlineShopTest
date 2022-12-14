@@ -11,10 +11,104 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+
+    /*border: 1px red solid;*/
 }
 
 body {
     margin: 0;
     height: 200rem;
 	background-color: #202125;
+}
+
+
+.content {
+
+    background-color: #151718;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 10%;
+
+    border-radius: 20px;
+    color: white;
+    
+    padding: 2rem 6rem;
+
+}
+
+.content h1 {
+    font-family: GenomUltra;
+    font-size: 3rem;
+}
+.content h2 {
+    font-family: Arial;
+    font-size: 1.7rem;
+    margin-top: -2.5rem;
+}
+
+.content svg {
+    width: 14rem;
+    margin-top: 2rem;
+}
+
+.content form {
+
+    margin-top: -1.5rem;
+
+    float: right;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    
+}
+.content form * {
+    
+    width: 20rem;
+
+
+    background-color: #1a1a1f;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.content form textarea {
+    resize: none;
+    background:
+    linear-gradient(90deg, rgba(246,193,62,1) 0%, rgba(243,112,43,1) 100%)
+    left 
+    bottom
+    #1a1a1f   
+    no-repeat;
+    background-size:100% 3px;
+}
+.content form input {
+    height: 2.5rem;
+    font-size: 1.25rem;
+    width: 19.6rem;
+
+    background:
+    linear-gradient(90deg, rgba(246,193,62,1) 0%, rgba(243,112,43,1) 100%)
+    left 
+    bottom
+    #1a1a1f   
+    no-repeat;
+    background-size:100% 3px ;
+}
+
+.content form *:focus {
+    outline: none;  
+}
+
+.content form button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 100px;
+    background: linear-gradient(90deg, rgba(246,193,62,1) 0%, rgba(243,112,43,1));
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
