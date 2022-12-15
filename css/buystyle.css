@@ -59,19 +59,23 @@ body {
     margin-bottom: 1.5rem;
     height: 6rem;
     width: 95%;
+
+    display: flex;
+
     transition: all 200ms ease-in-out;
 }
 .products li > img {
     margin-top: 0.5rem;
-    margin-left: 2.5rem;
-    width: 1.75rem;
-    height: 5rem;
+    margin-left: 1.5rem;
+
+    max-height: 5rem;
+    max-width: 5rem;
+    object-fit: scale-down;
 }
 
 .products li div {
     position: absolute;
-	
-    margin-left: 5rem;
+    margin-left: 7rem;
 }
 .product_name {
     margin-top: 2rem;

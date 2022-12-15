@@ -15,7 +15,7 @@
 		<script src="js/product-site.js"></script>
 		<script src="assets/products/products.js"></script>
 	</head>
-	<body onload="loadProducts()">
+	<body onload="loadProducts(); onPageLoaded()">
 
 		<!-- Navigationsleiste -->
 		<nav id="navbar">
@@ -45,10 +45,37 @@
 
 		<div class="content">
 			<div class="categories">
+				<ul>
 
+					
+					<li class="searchCategory"><div>
+						<h1>Farbe:</h1>
+						<ul>
+							<input type="checkbox" class="SearchFilter" value="color_black">Schwarz<br>
+							<input type="checkbox" class="SearchFilter" value="color_white">Weiß<br>
+							<input type="checkbox" class="SearchFilter" value="color_red">Rot<br>
+							<input type="checkbox" class="SearchFilter" value="color_purple">Lila<br>
+							<input type="checkbox" class="SearchFilter" value="color_blue">Blau<br>
+							<input type="checkbox" class="SearchFilter" value="color_green">Grün<br>
+							<input type="checkbox" class="SearchFilter" value="color_orange">Orange<br>
+							<input type="checkbox" class="SearchFilter" value="color_pink">Rosa<br>
+						</ul>
+					</div></li>
+
+					<li class="searchCategory"><div>
+						<h1>Kategorie</h1>
+						<ul>
+							<input type="checkbox" class="SearchFilter" value="category_bottle">Trinkflaschen<br>
+							<input type="checkbox" class="SearchFilter" value="category_bag">Rucksäcke<br>
+							<input type="checkbox" class="SearchFilter" value="category_movement">Fortbewegung<br>
+							<input type="checkbox" class="SearchFilter" value="category_hat">Hüte<br>
+						</ul>
+					</div></li>
+					
+				</ul>
 			</div>
 			<div class="products_container">
-				<input type="text" id="searchInput" onkeyup="search()" placeholder="Search for products..">
+				<input type="text" id="searchInput" onkeyup="searchBarUpdate()" placeholder="Search for products...">
 				<div class="products">
 					<ul id="product_list">
 						

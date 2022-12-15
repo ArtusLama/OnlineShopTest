@@ -28,15 +28,48 @@
     flex-direction: row;
 }
 
-.content div {
+.content > div {
 
-    /*border: 2px solid #e9eef2;*/
+    border: 2px solid #e9eef2;
 
 }
 
 
 .categories {
     width: 15rem;
+}
+
+.categories > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.searchCategory {
+    list-style: none;
+    width: 100%;
+
+    padding: 0;
+    padding-bottom: 2rem;
+    
+    border-bottom: 2px #e9eef2 solid;
+
+    color: #686868;
+}
+
+.searchCategory div{
+    margin-left: 2rem;
+}
+.searchCategory div h1 {
+    font-size: 1.2rem;
+    color: #434343;
+}
+.searchCategory div ul{
+    margin-left: -1.5rem;
+    margin-top: -0.7rem;
+}
+.searchCategory div input{
+    width: 15px;
+    height: 15px;
 }
 
 
