@@ -97,12 +97,38 @@ var products =
     },
     "apple_tennisschläger": {
         name: "Apple Tennisschläger",
-        price: 12,
+        price: 80,
         categories: [
             "color_white",
             "from_apple"
         ]
-    }
+    },
+    "apple_schubkarre": {
+        name: "Apple Schubkarre",
+        price: 124.99,
+        categories: [
+            "color_white",
+            "color_grey",
+            "from_apple"
+        ]
+    },
+    "apple_waschmaschine": {
+        name: "Apple Wash",
+        price: 999.99,
+        categories: [
+            "color_grey",
+            "from_apple"
+        ]
+    },
+    "apple_macbook_10000": {
+        name: "IMac 1000 Pro+ Max",
+        price: 100000,
+        categories: [
+            "color_grey",
+            "color_black",
+            "from_apple"
+        ]
+    },
 
 }
 
