@@ -54,12 +54,53 @@ var products =
         ]
     },
     
-    "TaubenHut": {
-        name: "Tauben Hut",
-        price: 34.99,
+
+
+
+
+    "iwater": {
+        name: "Apple IWater Pro",
+        price: 99.99,
         categories: [
-            "category_hat",
+            "category_bottle",
+            "color_white",
+            "from_apple"
+        ]
+    },
+    "glow_toiletpaper": {
+        name: "Tolettenpapier",
+        price: 10,
+        categories: [
+            "color_white"
+        ]
+    },
+    "Gießkanne": {
+        name: "Super Gießkanne",
+        price: 14.99,
+        categories: [
             "color_blue"
+        ]
+    },
+    "löffel": {
+        name: "Guter Löffel",
+        price: 4.99,
+        categories: [
+            "color_grey"
+        ]
+    },
+    "singing_kaktus": {
+        name: "Netter Kaktus",
+        price: 12,
+        categories: [
+            "color_green"
+        ]
+    },
+    "apple_tennisschläger": {
+        name: "Apple Tennisschläger",
+        price: 12,
+        categories: [
+            "color_white",
+            "from_apple"
         ]
     }
 
