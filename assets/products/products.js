@@ -45,14 +45,14 @@ var products =
         ]
     },
     
-    "unicorn_scooter": {
+    /*"unicorn_scooter": {
         name: "Einhorn Roller",
         price: 149.99,
         categories: [
             "category_movement",
             "color_pink"
         ]
-    },
+    },*/
     
 
 
@@ -67,7 +67,7 @@ var products =
             "from_apple"
         ]
     },
-    "glow_toiletpaper": {
+    /*"glow_toiletpaper": {
         name: "Tolettenpapier",
         price: 10,
         categories: [
@@ -128,7 +128,7 @@ var products =
             "color_black",
             "from_apple"
         ]
-    },
+    },*/
 
 }
 
